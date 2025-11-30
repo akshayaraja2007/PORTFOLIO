@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certificates | Akshayaraja E</title>
+    <link rel="icon" type="image/jpg" href="assets/images/ak.jpg">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="index.html" class="logo">AKSHAYARAJA</a>
+            <ul class="nav-links">
+                <li><a href="index.html" class="nav-link">Home</a></li>
+                <li><a href="projects.html" class="nav-link">Projects</a></li>
+                <li><a href="certificates.html" class="nav-link active">Certificates</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+            </ul>
+            <div style="display: flex; align-items: center; gap: 15px;">
+                <button id="theme-toggle" class="theme-toggle"><span>🌙</span></button>
+                <button class="hamburger">
+                    <span class="bar"></span><span class="bar"></span><span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container section">
+        <h1 class="page-title">Certifications</h1>
+        
+        <div class="grid-layout">
+            
+            <!-- Certificate 1: Campus Ambassador -->
+            <article class="card">
+                <img src="assets/images/campus-ambassador.jpg" alt="Campus Ambassador" class="cert-thumb">
+                <h3>Campus Ambassador</h3>
+                <p>Certificate of appreciation/completion.</p>
+                <!-- data-type="pdf" or "image" tells JS how to render it -->
+                <button class="btn preview-btn" data-file="assets/pdf/campus-ambassador.pdf" data-type="pdf">Preview PDF</button>
+            </article>
+
+            <!-- Certificate 2: Commonwealth Excel -->
+            <article class="card">
+                <img src="assets/images/excel-thumb.jpg" alt="Excel Forage" class="cert-thumb">
+                <h3>Commonwealth Excel Forage</h3>
+                <p>Advanced Excel virtual experience program.</p>
+                <button class="btn preview-btn" data-file="assets/pdf/comman-wealth-excel.pdf" data-type="pdf">Preview PDF</button>
+            </article>
+
+        </div>
+    </main>
+
+    <!-- Modal for Preview -->
+    <div id="cert-modal" class="modal">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="modal-body">
+                <!-- Content injected by JS -->
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Akshayaraja E. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
